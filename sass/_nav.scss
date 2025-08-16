@@ -1,0 +1,55 @@
+@use "variables";
+
+.nav {
+  background-color: variables.$black-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 5px 9px black;
+  border-radius: 0rem 0rem 1rem 1rem;
+
+  .logo__text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: variables.$white-color;
+    a {
+      color: variables.$white-color;
+      text-decoration: none;
+      margin: 0 1rem 0 10rem;
+      font-size: xx-large;
+    }
+    a:hover {
+      color: variables.$primary-color;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0rem;
+    margin: 1rem 3rem 1rem 0;
+    .nav__item {
+      list-style: none;
+      font-size: 1.2rem;
+      margin: 0.2px;
+      padding: 2rem;
+      border: 2px variables.$white-color;
+      border-style: ridge ridge ridge ridge;
+      border-radius: 0.5rem;
+      margin: 0 1rem 0 1rem;
+      a {
+        color: variables.$white-color;
+        text-decoration: none;
+        margin: 0;
+      }
+    }
+    .nav__item:hover {
+      border-color: variables.$primary-color;
+      a {
+        color: variables.$primary-color;
+      }
+    }
+  }
+}

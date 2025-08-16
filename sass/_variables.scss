@@ -1,0 +1,20 @@
+$primary-color: rgb(255, 239, 20);
+$secondary-color: green;
+$black-color: black;
+$white-color: white;
+
+.texto-degradado {
+  /* 1. Crea el degradado como fondo */
+  background-image: linear-gradient(95deg, $primary-color, $black-color);
+
+  /* 2. Recorta el fondo para que solo se vea en el texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Necesario para navegadores WebKit */
+
+  /* 3. Haz que el color del texto sea transparente */
+  color: transparent;
+
+  /* Estilos adicionales */
+  font-size: 4rem;
+  font-weight: bold;
+}
