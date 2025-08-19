@@ -1,3 +1,48 @@
+@use "variables";
+
 h1 {
+  text-align: center;
+  overflow: visible;
+  height: 15rem;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.main {
+  padding: 5rem 5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  margin: 1rem;
+  img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+section.Habilidades {
+  background-color: variables.$black-color;
+  height: 30rem;
+  h2 {
+    color: variables.$white-color;
+  }
+}
+footer {
+  background-color: variables.$black-color;
+  color: variables.$white-color;
+  padding: 2rem 0;
   text-align: center;
 }

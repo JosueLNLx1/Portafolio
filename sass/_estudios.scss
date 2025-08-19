@@ -1,0 +1,22 @@
+.estudios {
+  height: 50rem;
+  width: auto;
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p.estudios {
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+    height: auto;
+    margin: 0;
+  }
+  p.bold {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .estudios__container {
+    padding: 8rem;
+  }
+}

@@ -1,0 +1,26 @@
+@use "variables";
+
+@media (max-width: 768px) {
+  /* 1. OCULTAMOS el menú de enlaces */
+  .nav__list {
+    display: none;
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu nav */
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /* 2. MOSTRAMOS el botón de hamburguesa */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* 3. Creamos una clase para MOSTRAR el menú cuando se haga clic */
+  .nav-menu.active {
+    display: flex; /* Esta clase la añadiremos con JavaScript */
+  }
+}

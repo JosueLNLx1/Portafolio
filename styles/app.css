@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,7 +310,7 @@ template {
 
 .texto-degradado {
   /* 1. Crea el degradado como fondo */
-  background-image: linear-gradient(95deg, rgb(255, 239, 20), black);
+  background-image: linear-gradient(95deg, rgba(206, 194, 34, 0.973), black);
   /* 2. Recorta el fondo para que solo se vea en el texto */
   background-clip: text;
   -webkit-background-clip: text; /* Necesario para navegadores WebKit */
@@ -342,7 +343,7 @@ template {
   font-size: xx-large;
 }
 .nav .logo__text a:hover {
-  color: rgb(255, 239, 20);
+  color: rgba(206, 194, 34, 0.973);
 }
 .nav .nav__list {
   display: flex;
@@ -366,12 +367,148 @@ template {
   margin: 0;
 }
 .nav .nav__list .nav__item:hover {
-  border-color: rgb(255, 239, 20);
+  border-color: rgba(206, 194, 34, 0.973);
 }
 .nav .nav__list .nav__item:hover a {
-  color: rgb(255, 239, 20);
+  color: rgba(206, 194, 34, 0.973);
+}
+.nav .nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav .hamburguer-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
 }
 
 h1 {
   text-align: center;
+  overflow: visible;
+  height: 15rem;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.main {
+  padding: 5rem 5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  margin: 1rem;
+}
+.foto img {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+section.Habilidades {
+  background-color: black;
+  height: 30rem;
+}
+section.Habilidades h2 {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px; /* 1. Ancho máximo del contenido */
+  margin-left: auto; /* 2. Centrado horizontal */
+  margin-right: auto; /* 2. Centrado horizontal */
+  padding-left: 1rem; /* 3. Espaciado para pantallas pequeñas */
+  padding-right: 1rem; /* 3. Espaciado para pantallas pequeñas */
+}
+
+.section {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.section h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  /* 1. OCULTAMOS el menú de enlaces */
+  .nav__list {
+    display: none;
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu nav */
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  /* 2. MOSTRAMOS el botón de hamburguesa */
+  .nav-toggle {
+    display: block;
+  }
+  /* 3. Creamos una clase para MOSTRAR el menú cuando se haga clic */
+  .nav-menu.active {
+    display: flex; /* Esta clase la añadiremos con JavaScript */
+  }
+}
+.icons-initial {
+  display: inline-block;
+}
+.icons-initial .icon {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.Habilidades {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.estudios {
+  height: 50rem;
+  width: auto;
+}
+.estudios h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.estudios p.estudios {
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+  height: auto;
+  margin: 0;
+}
+.estudios p.bold {
+  font-weight: bold;
+  text-align: left;
+}
+.estudios .estudios__container {
+  padding: 8rem;
 }
