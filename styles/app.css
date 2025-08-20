@@ -512,3 +512,6 @@ footer {
 .estudios .estudios__container {
   padding: 8rem;
 }
+.estudios li {
+  font-size: 1.5rem;
+}
